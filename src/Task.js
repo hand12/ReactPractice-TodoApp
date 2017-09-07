@@ -1,6 +1,5 @@
 export class Task {
-  constructor(uuid, body, detail, priority, dead_line) {
-    this.uuid = uuid
+  constructor(body, detail, priority, dead_line) {
     this.body = body;
     this.detail = detail;
     this.priority = priority;
