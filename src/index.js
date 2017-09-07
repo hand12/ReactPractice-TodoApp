@@ -3,19 +3,28 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import { BrowserRouter } from 'react-router-dom'
-import { createStore } from 'redux'
+import { applyMiddleware, compose, createStore } from 'redux'
 import { Provider } from 'react-redux'
-import reducer from './reducers/reducer.js'
+import reducer from './reducers/reducer'
+import { createBrowserHistory } from 'history';
+import { connectRouter, routerMiddleware, ConnectedRouter } from 'connected-react-router'
 
-//createStoreに引数でreducerを渡す。
-let store = createStore(reducer)
+const history = createBrowserHistory()
+
+const store = createStore(
+  connectRouter(history)(reducer),
+  compose(
+    applyMiddleware(
+      routerMiddleware(history),
+    ),
+  ),
+)
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <ConnectedRouter history={history}>
       <App />
-    </BrowserRouter>
+    </ConnectedRouter>
   </Provider>, document.getElementById('root')
 );
 

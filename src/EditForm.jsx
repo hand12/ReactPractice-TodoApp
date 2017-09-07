@@ -8,7 +8,7 @@ export class EditForm extends Component {
   }
   onChangeField(e) {
     console.log(e.target.name, e.target.value);
-    // this.setState({[e.target.name]: e.target.value});
+    this.setState({[e.target.name]: e.target.value});
   }
   render() {
     var task = {}

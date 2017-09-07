@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-
 import { TaskBar } from "./TaskBar.jsx"
 
 export const Board = (props) => (

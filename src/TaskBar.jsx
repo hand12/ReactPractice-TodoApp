@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { TaskBox } from "./TaskBox.jsx"
 
 export const TaskBar = (props) => (

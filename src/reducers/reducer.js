@@ -13,8 +13,8 @@ export default function reducer(state = initialState, action) {
       const allTasks = [...state.allTasks, action.task]
       return {
         allTasks: allTasks,
-        priorityTasks: setPriority(allTasks),
-        deadTasks: setDeadTasks(allTasks),
+        priorityTasks: setPriority(allTasks.slice()),
+        deadTasks: setDeadTasks(allTasks.slice()),
         doneTasks: [],
       }
     default:
