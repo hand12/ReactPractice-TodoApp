@@ -1,0 +1,436 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+form {
+  margin-bottom: 0; }
+
+button {
+  border: none;
+  background-color: #e95295;
+  cursor: pointer; }
+
+html {
+  background-color: #fffafa;
+  color: #444; }
+
+.wrapper {
+  width: 1920px;
+  margin: 0 auto; }
+
+.title_link {
+  color: #444;
+  text-decoration: none; }
+
+#title {
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd; }
+
+.task_post_box {
+  width: 1100px;
+  text-align: center;
+  background-color: #c3d825;
+  border-radius: 2.5px;
+  margin: 20px;
+  margin: 0 auto;
+  padding: 20px 0;
+  cursor: pointer;
+  border-bottom: 2px solid #9cac1e; }
+  .task_post_box a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none; }
+    .task_post_box a:hover {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      color: #444; }
+
+.task_bar {
+  background-color: #ddd;
+  width: 360px;
+  float: left;
+  margin-top: 30px;
+  margin-right: 10px;
+  box-shadow: 0 0 2px 0 #ddd;
+  border-top: 5px solid #c3d825; }
+  .task_bar:last-child {
+    margin-right: 0; }
+  .task_bar .task_bar_title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 2px -2px gray; }
+    .task_bar .task_bar_title:after {
+      margin: 0 auto;
+      margin-top: 10px;
+      display: block;
+      content: '';
+      width: 30%;
+      border-bottom: 2px solid #ddd; }
+  .task_bar .task_box {
+    height: 100%;
+    width: 380px;
+    margin: 0 auto; }
+    .task_bar .task_box .task {
+      text-align: center;
+      background-color: white;
+      margin: 10px;
+      margin-bottom: 20px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 0 2px 0 gray; }
+      .task_bar .task_box .task .task_top_box {
+        padding: 5px; }
+        .task_bar .task_box .task .task_top_box:after {
+          content: '';
+          display: block;
+          clear: both; }
+        .task_bar .task_box .task .task_top_box:after {
+          content: '';
+          display: block;
+          padding: 10px 0;
+          border-bottom: 1px dashed #ddd; }
+        .task_bar .task_box .task .task_top_box .task_title {
+          color: #444;
+          font-weight: bold;
+          font-size: 1.2rem;
+          float: left;
+          width: 70%;
+          padding: 1px 0;
+          text-align: left; }
+        .task_bar .task_box .task .task_top_box .task_priority {
+          color: #444;
+          border-radius: 2.5px;
+          background-color: white;
+          font-size: 0.8rem;
+          float: right;
+          border-radius: 2.5px;
+          padding: 3px 10px;
+          width: 20%; }
+          .task_bar .task_box .task .task_top_box .task_priority .level {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1rem; }
+        .task_bar .task_box .task .task_top_box .level1 {
+          border: 1px solid #1E98B9;
+          color: #1E98B9; }
+        .task_bar .task_box .task .task_top_box .level2 {
+          border: 1px solid #3EBA2B;
+          color: #3EBA2B; }
+        .task_bar .task_box .task .task_top_box .level3 {
+          border: 1px solid #F8D32F;
+          color: #F8D32F; }
+        .task_bar .task_box .task .task_top_box .level4 {
+          border: 1px solid #E06A3B;
+          color: #E06A3B; }
+        .task_bar .task_box .task .task_top_box .level5 {
+          border: 1px solid #8858AA;
+          color: #8858AA; }
+      .task_bar .task_box .task .task_bottom_box {
+        display: inline-block;
+        text-align: center;
+        clear: both; }
+      .task_bar .task_box .task .task_btn {
+        background-color: #89c3eb;
+        margin-top: 7px;
+        cursor: pointer;
+        border-radius: 2.5px;
+        display: inline-block;
+        padding: 3px;
+        font-size: 0.9rem;
+        width: 80px;
+        text-align: center;
+        margin-right: 10px;
+        border-bottom: 2px solid #5dade4; }
+        .task_bar .task_box .task .task_btn a {
+          text-decoration: none;
+          color: #444; }
+      .task_bar .task_box .task .task_show {
+        border: none;
+        background-color: #89c3eb;
+        cursor: pointer;
+        border-radius: 2.5px;
+        display: inline-block;
+        padding: 3px;
+        font-size: 0.9rem;
+        width: 80px;
+        text-align: center;
+        margin-right: 10px;
+        border-bottom: 2px solid #5dade4; }
+        .task_bar .task_box .task .task_show button {
+          font-size: 14px;
+          background-color: #89c3eb;
+          color: white;
+          padding: 0; }
+      .task_bar .task_box .task .task_delete {
+        border: none;
+        background-color: #e95295;
+        cursor: pointer;
+        border-radius: 2.5px;
+        display: inline-block;
+        padding: 3px;
+        font-size: 0.9rem;
+        width: 80px;
+        text-align: center;
+        margin-right: 10px;
+        border-bottom: 2px solid #e32579; }
+        .task_bar .task_box .task .task_delete button {
+          font-size: 14px;
+          background-color: #e95295;
+          color: white;
+          padding: 0; }
+      .task_bar .task_box .task .task_done {
+        border: none;
+        background-color: gray;
+        border-radius: 2.5px;
+        display: inline-block;
+        padding: 3px;
+        font-size: 0.9rem;
+        width: 80px;
+        text-align: center;
+        margin-right: 10px;
+        border-bottom: 2px solid #676767;
+        margin-right: 0; }
+        .task_bar .task_box .task .task_done button {
+          font-size: 14px;
+          cursor: default;
+          background-color: gray;
+          color: white;
+          padding: 0; }
+      .task_bar .task_box .task .task_unfinished {
+        border: none;
+        background-color: #c3d825;
+        cursor: pointer;
+        border-radius: 2.5px;
+        display: inline-block;
+        padding: 3px;
+        font-size: 0.9rem;
+        width: 80px;
+        text-align: center;
+        margin-right: 10px;
+        border-bottom: 2px solid #9cac1e;
+        margin-right: 0; }
+        .task_bar .task_box .task .task_unfinished button {
+          font-size: 14px;
+          background-color: #c3d825;
+          color: white;
+          padding: 0; }
+      .task_bar .task_box .task .task_detail {
+        padding: 5px; }
+      .task_bar .task_box .task .task_submit_btn input {
+        width: 100%;
+        background-color: #c3d825;
+        padding: 5px;
+        color: white;
+        border: none;
+        font-size: 1.2rem;
+        cursor: pointer; }
+
+#post_task {
+  margin: 0 auto;
+  padding: 50px;
+  width: 600px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: white; }
+  #post_task .post_task_title {
+    margin: 10px;
+    font-size: 32px;
+    margin-bottom: 20px; }
+    #post_task .post_task_title:after {
+      margin: 0 auto;
+      margin-top: 10px;
+      display: block;
+      content: '';
+      width: 30%;
+      border-bottom: 2px solid #c3d825; }
+  #post_task input {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    font-size: 24px;
+    box-shadow: 0 0 1px 0 black;
+    border-radius: 5px;
+    background-color: #eee;
+    border: none; }
+  #post_task textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    font-size: 18px;
+    box-shadow: 0 0 1px 0 black;
+    border-radius: 5px;
+    background-color: #eee;
+    border: none; }
+  #post_task .priority {
+    padding: 0 60px;
+    margin: 10px 0 20px; }
+    #post_task .priority:after {
+      content: '';
+      display: block;
+      clear: both; }
+    #post_task .priority:after {
+      content: '';
+      display: block;
+      padding: 5px 60px;
+      border-bottom: 1px solid #ddd; }
+    #post_task .priority label {
+      font-size: 22px;
+      float: left;
+      text-align: left;
+      width: 60%; }
+    #post_task .priority select {
+      font-size: 22px;
+      float: right;
+      width: 30%; }
+  #post_task .dead_line {
+    padding: 0 60px;
+    margin: 10px 0; }
+    #post_task .dead_line:after {
+      content: '';
+      display: block;
+      clear: both; }
+    #post_task .dead_line:after {
+      content: '';
+      display: block;
+      padding: 5px 60px;
+      border-bottom: 1px solid #ddd; }
+    #post_task .dead_line label {
+      font-size: 22px;
+      float: left;
+      text-align: left;
+      width: 60%; }
+    #post_task .dead_line input {
+      margin: 10px;
+      padding: 10px;
+      width: 80%;
+      font-size: 10px;
+      box-shadow: 0 0 1px 0 black;
+      border-radius: 5px;
+      background-color: #eee;
+      border: none;
+      margin: 0;
+      padding: 5px;
+      float: right;
+      width: 30%; }
+  #post_task .task_submit_btn input {
+    cursor: pointer;
+    background-color: #c3d825;
+    box-shadow: none;
+    border-bottom: 2px solid #9cac1e; }
+    #post_task .task_submit_btn input:hover {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      color: white; }
+
+.task_show {
+  width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd; }
+  .task_show .task_title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold; }
+    .task_show .task_title:after {
+      margin: 0 auto;
+      margin-top: 10px;
+      display: block;
+      content: '';
+      width: 30%;
+      border-bottom: 2px solid #c3d825; }
+  .task_show .task_detail {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 24px; }
+  .task_show .task_detail_bottom_box {
+    display: inline-block;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    font-size: 18px; }
+    .task_show .task_detail_bottom_box span {
+      font-style: italic;
+      padding-left: 10px;
+      font-weight: bold;
+      font-size: 20px; }
+  .task_show .level1 {
+    color: #1E98B9; }
+  .task_show .level2 {
+    color: #3EBA2B; }
+  .task_show .level3 {
+    color: #F8D32F; }
+  .task_show .level4 {
+    color: #E06A3B; }
+  .task_show .level5 {
+    color: #8858AA; }
+  .task_show .task_bottons {
+    border-top: 1px solid #ddd;
+    padding-top: 10px; }
+  .task_show .task_btn {
+    background-color: #89c3eb;
+    margin-top: 7px;
+    cursor: pointer;
+    border-radius: 2.5px;
+    display: inline-block;
+    padding: 3px;
+    font-size: 0.9rem;
+    width: 80px;
+    text-align: center;
+    margin-right: 10px;
+    width: 295px;
+    font-size: 24px;
+    margin: 0;
+    padding: 6px 0;
+    background-color: #c3d825;
+    border-bottom: 2px solid #9cac1e; }
+    .task_show .task_btn:last-child {
+      margin-left: 10px; }
+    .task_show .task_btn a {
+      text-decoration: none;
+      color: #444; }
+      .task_show .task_btn a:hover {
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        color: white; }
+
